@@ -1,7 +1,7 @@
 # Project Overview: OuroborOS
 
 ## Overview
-**Project Ouroboros** is a "security-by-suicide" Linux distribution. It is a high-paranoia, ephemeral environment designed to monitor its own system logs and immediately initiate a "Self-Destruct" sequence—wiping the filesystem and triggering a kernel panic—if unauthorized activity or forbidden commands are detected.
+**Project OuroborOS** is a "security-by-suicide" Linux distribution. It is a high-paranoia, ephemeral environment designed to monitor its own system logs and immediately initiate a "Self-Destruct" sequence—wiping the filesystem and triggering a kernel panic—if unauthorized activity or forbidden commands are detected. Basically Ouroboros, but in Linux!
 
 **Goals and Motivation:**
 * **System Integrity:** Implementing a real-time watchdog that monitors `/var/log/messages`.
@@ -23,7 +23,7 @@ Buildroot was chosen for its ability to generate a minimal, high-performance roo
 ## Hardware Platform
 * **Platform:** QEMU x86_64 (Standard PC)
 * **Support Detail:** This platform is natively supported by Buildroot via the `qemu_x86_64_defconfig`. 
-* **Sourcing:** As a one-man army, I will be sourcing the hardware virtually via QEMU; no physical boards are requested from the department.
+* **Sourcing:** I will be sourcing the hardware virtually via QEMU; no physical boards are requested, but this can all run on one.
 
 ---
 
@@ -36,7 +36,7 @@ Buildroot was chosen for its ability to generate a minimal, high-performance roo
 
 ## Previously Discussed Content
 * **Assignment 4 (Socket Programming):** The `aesdsocket` logic will be adapted to create a "Kill-Switch" listener that allows the system to be triggered remotely via a specific TCP packet.
-* **Buildroot Integration:** Custom packages and rootfs overlay techniques learned in Assignments 4-7 to bundle the daemon and destruction scripts.
+* **Buildroot Integration:** Custom packages and rootfs overlay techniques learned in Assignments 4-7 (prob. 8 and 9 too, in a way) to bundle the daemon and destruction scripts.
 * **Init Scripts:** Using SystemV init scripts to ensure the watchdog daemon starts immediately upon boot.
 
 ---
@@ -61,10 +61,6 @@ None. This project is entirely specific to this course and is not being leverage
 ---
 
 ## Team Members and Roles
-* **Individual Contributor:** [Your Name]
+* **Individual Contributor:** Uh, me, happysmaran
 * **Role:** Lead Architect, Kernel Configuration, Daemon Developer, and Professional Saboteur.
-
----
-
-## Schedule
-A link to the shared schedule and Sprint tracking can be found here: [Link to Wiki Schedule Page]
+* tldr it's just me.
