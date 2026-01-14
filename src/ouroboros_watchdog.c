@@ -9,7 +9,11 @@
 void self_destruct_sequence() {
     printf("\n!!! [OUROBOROS] UNAUTHORIZED ACTIVITY DETECTED !!!\n");
     printf("!!! [OUROBOROS] INITIATING SELF-DESTRUCT SEQUENCE !!!\n");
-    //For now, we just print this. The next task is for later.
+    system("/usr/bin/nuclear_wipe.sh");
+    
+    // Exit the C program so it stops reading logs 
+    // while the system is being deleted.
+    exit(0); 
 }
 
 int main() {
@@ -33,7 +37,7 @@ int main() {
             last_pos = ftell(fp);
             fclose(fp);
         }
-        sleep(1); //Don't hog the CPU, that will be bad
+        sleep(1); 
     }
     return 0;
 }
