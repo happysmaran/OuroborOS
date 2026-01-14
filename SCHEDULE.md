@@ -14,13 +14,13 @@
 (all issues for each sub-bullet can be found in the "Issues" tab)
 
 ### Sprint 1: Foundation & Log Watcher
-* **Jan 11 (Today):** Finalize Project Proposal, Wiki setup, and GitHub Project Board initialization.
+* **Jan 11:** Finalize Project Proposal, Wiki setup, and GitHub Project Board initialization.
 * **Jan 12:** Configure Buildroot for `qemu_x86_64`. Enable `syslogd` and verify log generation in `/var/log/messages`.
 * **Jan 13:** Develop the `ouroboros-watchdog` C application. 
     * Must be able to "tail" a file and detect the string "sudo".
 
 ### Sprint 2: The Self-Destruct Sequence
-* **Jan 14:** Research and implement the "Nuclear Wipe" script. 
+* **Jan 14 (Today):** Research and implement the "Nuclear Wipe" script. 
     * Script must recursively delete `/` excluding essential runtime paths like `/proc` and `/sys` to prevent immediate kernel hang.
 * **Jan 15:** Implement the Magic SysRq trigger.
     * Write a C utility to echo 'c' to `/proc/sysrq-trigger` to force a kernel panic.
