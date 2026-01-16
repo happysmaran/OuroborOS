@@ -20,11 +20,11 @@
     * Must be able to "tail" a file and detect the string "sudo".
 
 ### Sprint 2: The Self-Destruct Sequence
-* **Jan 14 (Today):** Research and implement the "Nuclear Wipe" script. 
+* **Jan 14:** Research and implement the "Nuclear Wipe" script. 
     * Script must recursively delete `/` excluding essential runtime paths like `/proc` and `/sys` to prevent immediate kernel hang.
 * **Jan 15:** Implement the Magic SysRq trigger.
     * Write a C utility to echo 'c' to `/proc/sysrq-trigger` to force a kernel panic.
-* **Jan 16:** Integration testing. Ensure the watchdog can successfully call the wipe script and trigger the crash.
+* **Jan 16 (Today):** Integration testing. Ensure the watchdog can successfully call the wipe script and trigger the crash.
 
 ### Sprint 3: Networking & Hardening
 * **Jan 17:** Integrate Networking. 
