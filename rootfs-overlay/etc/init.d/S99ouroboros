@@ -1,0 +1,23 @@
+#!/bin/sh
+
+case "$1" in
+  start)
+    echo "Starting OuroborOS watchdog in 5 seconds..."
+    # The parentheses and the ampersand create a "fire and forget" subshell
+    (
+        # Wait for the login prompt to clear the console
+        sleep 5 
+        /usr/bin/ouroboros_watchdog > /dev/null 2>&1 &
+        /usr/bin/ouroboros_remote > /dev/null 2>&1 &
+    ) &
+    ;;
+  stop)
+    killall ouroboros_watchdog
+    killall ouroboros_remote
+    ;;
+  *)
+    echo "Usage: $0 {start|stop}"
+    exit 1
+esac
+
+exit 0

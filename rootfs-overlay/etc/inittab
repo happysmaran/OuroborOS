@@ -1,0 +1,3 @@
+# Respawn the Ouroboros daemons if they die
+::respawn:/usr/bin/ouroboros_watchdog
+::respawn:/usr/bin/ouroboros_remote
