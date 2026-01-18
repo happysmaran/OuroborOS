@@ -24,13 +24,13 @@
     * Script must recursively delete `/` excluding essential runtime paths like `/proc` and `/sys` to prevent immediate kernel hang.
 * **Jan 15:** Implement the Magic SysRq trigger.
     * Write a C utility to echo 'c' to `/proc/sysrq-trigger` to force a kernel panic.
-* **Jan 16 (Today):** Integration testing. Ensure the watchdog can successfully call the wipe script and trigger the crash.
+* **Jan 16:** Integration testing. Ensure the watchdog can successfully call the wipe script and trigger the crash.
 
 ### Sprint 3: Networking & Hardening
 * **Jan 17:** Integrate Networking. 
     * Adapt `aesdsocket` code to listen for a specific encrypted or plain-text "Kill Packet" to trigger destruction remotely.
 * **Jan 18:** Optimization & Edge Cases. Ensure the system runs from RAM (initramfs) so the destruction process isn't interrupted by disk I/O errors.
-* **Jan 19:** Final Documentation, Peer Review preparation, and project submission.
+* **Jan 19 (Today):** Final Documentation, Peer Review preparation, and project submission.
 
 ---
 
