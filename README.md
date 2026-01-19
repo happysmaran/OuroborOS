@@ -36,6 +36,8 @@ Buildroot was chosen for its ability to generate a minimal, high-performance roo
 * **Standard C Library (glibc/uClibc-ng):** For the watchdog daemon implementation.
 * **Procps-ng:** To monitor system processes during the destruction sequence.
 
+All three of these libraries are standard and come with Buildroot, which can be found here: https://github.com/buildroot/buildroot
+
 ---
 
 ## Previously Discussed Content
