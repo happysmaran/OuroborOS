@@ -10,7 +10,7 @@
 * **Motivation:** To explore the depths of Linux system administration and kernel-user space triggers through a technically challenging (and intentionally absurd) use case.
 
 ### Hardware Block Diagram
-
+There isn't one, really, as everything happens in software. The hardware would be a computer (or in our case a QEMU x86_64 vm).
 
 ---
 
