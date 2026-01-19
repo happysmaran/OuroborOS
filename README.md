@@ -28,7 +28,7 @@ Buildroot was chosen for its ability to generate a minimal, high-performance roo
 * **Platform:** QEMU x86_64 (Standard PC)
 * **Support Detail:** This platform is natively supported by Buildroot via the `qemu_x86_64_defconfig`. 
 * **Sourcing:** I will be sourcing the hardware virtually via QEMU; no physical boards are requested, but this can all run on one.
-
+In other words, this hardware platform just uses the Buildroot system we have been using in all of the previous assignments so far, just x64 based rather than arm64 based.
 ---
 
 ## Open Source Projects Used
