@@ -30,8 +30,9 @@
 * **Jan 17:** Integrate Networking. 
     * Adapt `aesdsocket` code to listen for a specific encrypted or plain-text "Kill Packet" to trigger destruction remotely.
 * **Jan 18:** Optimization & Edge Cases. Ensure the system runs from RAM (initramfs) so the destruction process isn't interrupted by disk I/O errors.
-* **Jan 19 (Today):** Final Documentation, Peer Review preparation, and project submission.
+* **Jan 19:** Final Documentation, Peer Review preparation, and project submission.
 
+Done.
 ---
 
 ## Sprint 1 Deliverables (Definition of Done)
