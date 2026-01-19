@@ -1,6 +1,7 @@
 # Project Overview: OuroborOS
 
 Schedule can be found in SCHEDULE.MD
+
 Video demonstration can be found in VIDEO.MD
 
 ## Overview
