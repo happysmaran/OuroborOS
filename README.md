@@ -1,5 +1,8 @@
 # Project Overview: OuroborOS
 
+Schedule can be found in SCHEDULE.MD
+Video demonstration can be found in VIDEO.MD
+
 ## Overview
 **Project OuroborOS** is a "security-by-suicide" Linux distribution. It is a high-paranoia, ephemeral environment designed to monitor its own system logs and immediately initiate a "Self-Destruct" sequence—wiping the filesystem and triggering a kernel panic—if unauthorized activity or forbidden commands are detected. Basically Ouroboros, but in Linux!
 
