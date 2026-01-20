@@ -1,8 +1,10 @@
 # Project Overview: OuroborOS
 
 Schedule can be found in SCHEDULE.MD
+https://github.com/happysmaran/OuroborOS/blob/main/SCHEDULE.md
 
 Video demonstration can be found in VIDEO.MD
+https://github.com/happysmaran/OuroborOS/blob/main/VIDEO.md
 
 ## Overview
 **Project OuroborOS** is a "security-by-suicide" Linux distribution. It is a high-paranoia, ephemeral environment designed to monitor its own system logs and immediately initiate a "Self-Destruct" sequence—wiping the filesystem and triggering a kernel panic—if unauthorized activity or forbidden commands are detected. Basically Ouroboros, but in Linux!
@@ -14,7 +16,8 @@ Video demonstration can be found in VIDEO.MD
 * **Motivation:** To explore the depths of Linux system administration and kernel-user space triggers through a technically challenging (and intentionally absurd) use case.
 
 ### Hardware Block Diagram
-There isn't one, really, as everything happens in software. The hardware would be a computer (or in our case a QEMU x86_64 vm).
+There isn't one, really, as everything happens in software. The hardware would be a computer (or in our case a QEMU x86_64 vm). But if you so do want one:
+<img width="683" height="384" alt="image" src="https://github.com/user-attachments/assets/dd67885a-1e13-4bfa-a51b-5451bfac3cb3" />
 
 ---
 
@@ -29,14 +32,11 @@ Buildroot was chosen for its ability to generate a minimal, high-performance roo
 * **Support Detail:** This platform is natively supported by Buildroot via the `qemu_x86_64_defconfig`. 
 * **Sourcing:** I will be sourcing the hardware virtually via QEMU; no physical boards are requested, but this can all run on one.
 In other words, this hardware platform just uses the Buildroot system we have been using in all of the previous assignments so far, just x64 based rather than arm64 based.
+Furthermore, even if it officially is not included in the course's hardware lists for Buildroot, this entire setup can be remade one-to-one on the Raspberry Pi system, which _is_ included in the system, as the code can be transplanted without any changes onto an arm64 system.
 ---
 
 ## Open Source Projects Used
-* **BusyBox:** For the lightweight `syslogd` implementation and standard shell utilities (rm, echo, cat).
-* **Standard C Library (glibc/uClibc-ng):** For the watchdog daemon implementation.
-* **Procps-ng:** To monitor system processes during the destruction sequence.
-
-All three of these libraries are standard and come with Buildroot, which can be found here: https://github.com/buildroot/buildroot
+* **Buildroot:** The entire thing is based on its tools it comes with, including GNU GCC. https://github.com/buildroot/buildroot
 
 ---
 
