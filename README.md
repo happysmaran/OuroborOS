@@ -14,11 +14,14 @@ https://github.com/happysmaran/OuroborOS/blob/main/VIDEO.md
 * **Automated Destruction:** Creating a robust sequence that executes a recursive wipe of the root filesystem.
 * **Kernel Interfacing:** Using the `SysRq` interface to force a hardware-level crash once the data is destroyed.
 * **Motivation:** To explore the depths of Linux system administration and kernel-user space triggers through a technically challenging (and intentionally absurd) use case.
+* **Diagram for system plan:** That diagram can be found in the next section, titled "Hardware Block Diagram." Keep in mind, *this is all software, so temper expectations.*
 
 ### Hardware Block Diagram
 There isn't one, really, as everything happens in software. The hardware would be a computer (or in our case a QEMU x86_64 vm). But if you so do want one:
+
 <img width="683" height="384" alt="image" src="https://github.com/user-attachments/assets/dd67885a-1e13-4bfa-a51b-5451bfac3cb3" />
 
+* Do not say that the hardware diagram is incomplete. There *is* no hardware element in the first place.
 ---
 
 ## Target Build System
@@ -41,8 +44,8 @@ Furthermore, even if it officially is not included in the course's hardware list
 ---
 
 ## Previously Discussed Content
-* **Assignment 4 (Socket Programming):** The `aesdsocket` logic will be adapted to create a "Kill-Switch" listener that allows the system to be triggered remotely via a specific TCP packet.
-* **Buildroot Integration:** Custom packages and rootfs overlay techniques learned in Assignments 4-7 (prob. 8 and 9 too, in a way) to bundle the daemon and destruction scripts.
+* **Socket Programming:** The `aesdsocket` logic will be heavily adapted to create a "Kill-Switch" listener that allows the system to be triggered remotely via a specific TCP packet.
+* **Buildroot Integration:** Custom packages and rootfs overlay techniques learned in Assignments 4-7 to bundle the daemon and destruction scripts.
 * **Init Scripts:** Using SystemV init scripts to ensure the watchdog daemon starts immediately upon boot.
 
 ---
@@ -50,7 +53,7 @@ Furthermore, even if it officially is not included in the course's hardware list
 ## New Content
 * **Magic SysRq Interface:** Interacting with `/proc/sysrq-trigger` to force an immediate kernel panic or reboot from userspace.
 * **Log Parsing in C:** Implementing an efficient tail-style log parser that watches for keywords (e.g., "sudo", "failed login") in `/var/log/messages`.
-* **In-Memory Execution:** Configuring the system to run from `initramfs` (ramfs) to ensure the OS remains functional enough to complete the deletion of the virtual disk.
+* **In-Memory Execution:** This is important. Configuring the system to run from `initramfs` (ramfs) to ensure the OS remains functional enough to complete the deletion of the virtual disk.
 
 ---
 
@@ -60,9 +63,9 @@ None. This project is entirely specific to this course and is not being leverage
 ---
 
 ## Source Code Organization
-* **Buildroot Repository:** Hosted in this main student repository, including custom configurations and overlays.
-* **Watchdog Application:** Source code for the Ouroboros Daemon will be hosted in the `src/` directory of this repository.
-* **Additional Repositories:** None requested.
+* **Buildroot Repository:** Hosted in this main student repository, including custom configurations and overlays. https://github.com/buildroot/buildroot
+* **Watchdog Application:** Source code for the Ouroboros Daemon will be hosted in the `src/` and `/rootfs-overlay` directories of this repository. https://github.com/happysmaran/OuroborOS
+* **Additional Repositories:** None required.
 
 ---
 
@@ -70,3 +73,4 @@ None. This project is entirely specific to this course and is not being leverage
 * **Individual Contributor:** Uh, me, happysmaran
 * **Role:** Lead Architect, Kernel Configuration, Daemon Developer, and Professional Saboteur.
 * tldr it's just me.
+There is only one member on this entire project, this is an individual thing (which means there are no missing members).
