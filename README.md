@@ -14,7 +14,7 @@ https://github.com/happysmaran/OuroborOS/blob/main/VIDEO.md
 * **Automated Destruction:** Creating a robust sequence that executes a recursive wipe of the root filesystem.
 * **Kernel Interfacing:** Using the `SysRq` interface to force a hardware-level crash once the data is destroyed.
 * **Motivation:** To explore the depths of Linux system administration and kernel-user space triggers through a technically challenging (and intentionally absurd) use case.
-* **Diagram for system plan:** That diagram can be found in the next section, titled "Hardware Block Diagram." Keep in mind, *this is all software, so temper expectations.*
+* **Diagram for system plan:** That diagram can be found in the next section, titled "Hardware Block Diagram." Keep in mind, *this is all software.*
 
 <img width="683" height="384" alt="image" src="https://github.com/user-attachments/assets/dd67885a-1e13-4bfa-a51b-5451bfac3cb3" />
 
