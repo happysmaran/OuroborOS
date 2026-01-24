@@ -72,7 +72,7 @@ None. This project is entirely specific to this course and is not being leverage
 ---
 
 ## Team Members and Roles
-* **Individual Contributor:** Uh, me, happysmaran
+* **Individual (and only) Contributor to the project:** Uh, me, happysmaran
 * **Role:** Lead Architect, Kernel Configuration, Daemon Developer, and Professional Saboteur.
 * tldr it's just me.
 There is only one member on this entire project, this is an individual thing (which means there are no missing members).
