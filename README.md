@@ -16,6 +16,8 @@ https://github.com/happysmaran/OuroborOS/blob/main/VIDEO.md
 * **Motivation:** To explore the depths of Linux system administration and kernel-user space triggers through a technically challenging (and intentionally absurd) use case.
 * **Diagram for system plan:** That diagram can be found in the next section, titled "Hardware Block Diagram." Keep in mind, *this is all software, so temper expectations.*
 
+<img width="683" height="384" alt="image" src="https://github.com/user-attachments/assets/dd67885a-1e13-4bfa-a51b-5451bfac3cb3" />
+
 ### Hardware Block Diagram
 There isn't one, really, as everything happens in software. The hardware would be a computer (or in our case a QEMU x86_64 vm). But if you so do want one:
 
